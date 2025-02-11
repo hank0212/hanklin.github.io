@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tsung-Han (Hank) Lin</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- You can add any additional fonts or icons here -->
+  </head>
+  <body>
+    <!-- Header with Profile & Contact Info -->
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <!-- Replace with your own profile picture -->
+          <img src="assets/profile_picture.jpeg" class="ppic" alt="Profile Picture of Tsung-Han (Hank) Lin" />
+        </div>
+        <div id="ddesc">
+          <h1>Tsung-Han Lin (林宗翰）</h1>
+          <h2>Multimodal Learning, Vision-Language</h2>
+          <p>
+            I am an AI researcher at MSLab @ NTU. I recieved B.S. degree at UCLA majoring in Mathematics of Computation.
+            My primary interest lies in multimodal learning, particularly exploring scalable architectures and frameworks that bridge vision and language. I am especially curious about how different modalities can align effectively to improve complex reasoning tasks and produce more robust, context-aware outputs. Feel free to contact me if you share similar interests.
+          </p>
+
+
+          <div id="dcontact">
+            <a href="https://docs.google.com/document/d/1KBhXzQeQHALaXGr4ac351zUouCVQM3k9IUDBWn4VdiA/edit?usp=sharing"><img src="assets/resume.svg" class="iico"/></a>
+            <a href="https://github.com/hank0212"><img src="assets/cgithub.svg" class="iico"/></a>
+            <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="Click to reveal email" alt="Email Icon" />
+          </div>
+          <div id="demail" style="opacity: 0; transition: opacity 0.5s;"></div>
+          <script type="text/javascript">
+            var e_is_shown = false;
+            document.getElementById('iemail').addEventListener("click", function(){
+              let demail = document.getElementById('demail');
+              demail.innerHTML = "lzh0212@g.ucla.edu";
+              demail.style.opacity = e_is_shown ? 0 : 1;
+              e_is_shown = !e_is_shown;
+            });
+          </script>
+          
+          
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    
+
+    <!-- Experience Section -->
+    <div id="experience" class="container">
+      <h2>Experience</h2>
+      <div class="entry row">
+        <div class="timespan">
+          2024 -
+        </div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="assets/ntu.jpeg" />
+          <img src="assets/nvidia.png" style="width: 100px; max-width: none;" />
+        </div>
+        <div class="desc">
+          I am a member of MSLab at National Taiwan University, Advised by <a href="https://www.csie.ntu.edu.tw/~sdlin/">Professor Shou-De Lin</a>. contributing to an EDA project in collaboration with NVIDIA.
+        </div>
+      </div>
+      
+      <div class="entry row">
+        <div class="timespan">2023 - 2024</div>
+        <div class="ico">
+          <div class="entry-dot"></div>
+          <img src="assets/ucla.png"style="width: 100px; max-width: none;" />
+          <img src="assets/ScAI.jpeg"style="width: 100px; max-width: none;" />
+        </div>
+        <div class="desc">
+          Contributing to social commonsense reasoning benchmark for Vision-Language Models.
+        </div>
+      </div>
+
+ 
+
+
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Publications Section -->
+    <div id="publications" class="container">
+      <h2>Publications</h2>
+      <div class="pub">
+        <p>
+          <strong>[1]VISUAL-ALPHASOCIAL: Benchmark and Self-Reflective Chain-of-Thought Generation for Visual Social Commonsense Reasoning - Findings of EMNLP 2024 </strong> 
+          
+          <p>Zongyu Lin, Zhikun Xu, Yixin Wan, Xingcheng Yao, Xiaohan Song, <strong>Tsung-Han Lin</strong>, Selina
+          Song, Pranav Subbaraman, Kai-Wei Chang, and Yizhou Sun</p>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+  </body>
+  <small>Template Modified from Andrej Karpathy</small>
+
+</html>
